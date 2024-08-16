@@ -1,0 +1,39 @@
+CRUD com React Native e Supabase
+https://www.youtube.com/watch?v=hmtMQEl6azM
+
+https://supabase.com/dashboard/project/xfoynnvmczggrpuejzug
+
+1-criar o projeto react native 
+npx create-expo-app crud-com-react-native-e-supabase
+
+2-instalar a bblioteca do supabase no projeto (opção ao firebase)
+npx expo install @supabase/supabase-js @react-native-async-storage/async-storage @rneui/themed
+
+3-criar e configurar a chave do supabase 
+https://supabase.com/dashboard/projects
+
+4-pegar a project url em Project API
+https://xfoynnvmczggrpuejzug.supabase.co
+
+5-criar uma .env 
+-cria: SUPABASE_URL='project url'
+
+6-em seguida pegar a anon public (abaixo de project url) e por na .env 
+SUPABASE_ANON_PUBLIC='anon public'
+
+7-limpar arquivo e deixar apenas App.tsx e node.modules, assets etc... 
+-em seguida rodar o npx expo start
+-configurado '.expo\types\router.d.ts' 
+-criado arquivo index.tsx para App.tsx aparecer já na tela inicial
+
+8-INICIANDO A ESTRUTURAÇÃO DA TELA 
+-inserido os componentes de: Input, Text etc.. 
+-feito as inserções de CSS de cada um deles
+
+9-criado a tabela tasks e as suas colunas no supabase 
+-criado pasta de services o arquivo supabase.ts (services\supabase.ts) para configurar a conexão 
+-importado as variaveis necessárias e exportado o arquivo para uso 
+
+10-criado as funcionalidades de adicionar e listar os dados do banco na view 
+
+11-
